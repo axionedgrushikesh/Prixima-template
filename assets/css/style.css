@@ -62,13 +62,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -78,17 +152,30 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -104,7 +191,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   border: 0;
@@ -119,9 +208,13 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
+sup {
+  top: -.7em;
+}
 
-sub { bottom: -.25em; }
+sub {
+  bottom: -.25em;
+}
 
 /* 1.2. Clear Fix
    ========================================================================== */
@@ -132,9 +225,13 @@ sub { bottom: -.25em; }
   content: " ";
 }
 
-.cf:after { clear: both; }
+.cf:after {
+  clear: both;
+}
 
-.cf { zoom: 1; }
+.cf {
+  zoom: 1;
+}
 
 *,
 *::after,
@@ -251,8 +348,8 @@ li {
   padding: 5px 0;
 }
 
-.header-top-contact a { 
-  color: #fff; 
+.header-top-contact a {
+  color: #fff;
   font-size: 14px;
 }
 
@@ -284,7 +381,9 @@ li {
   border-radius: 50%;
 }
 
-.header-top-media { display: flex; }
+.header-top-media {
+  display: flex;
+}
 
 .facebook::before {
   color: #fff;
@@ -314,6 +413,7 @@ li {
   font-size: 13px;
   content: "\f0d2";
 }
+
 /* header top styling ends */
 
 /* header bottom styling starts */
@@ -339,7 +439,7 @@ li {
   color: #FE4C28;
 }
 
-.header-bottom-nav { 
+.header-bottom-nav {
   display: flex;
   align-items: center;
 }
@@ -357,6 +457,7 @@ li {
 .active a {
   color: #FE4C28;
 }
+
 /* header bottom styling ends */
 
 /*=================================
@@ -387,15 +488,17 @@ li {
   left: 0;
 }
 
-.active-slide figure img{
+.active-slide figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.banner-slider li:not(:first-child) { display: none; }
+.banner-slider li:not(:first-child) {
+  display: none;
+}
 
-.banner-info span { 
+.banner-info span {
   color: #fff;
   font-size: 14px;
   text-transform: uppercase;
@@ -411,7 +514,9 @@ li {
   font-weight: 700;
 }
 
-.banner-btn { margin-top: 20px; }
+.banner-btn {
+  margin-top: 20px;
+}
 
 .gs-btn {
   margin-left: 0;
@@ -447,7 +552,9 @@ li {
   font-weight: 600;
 }
 
-.next { background-color: #A2A5A5;}
+.next {
+  background-color: #A2A5A5;
+}
 
 /*=================================
   Banner styling ends here
@@ -457,39 +564,58 @@ li {
   marketting styling starts here
 =================================*/
 
-.marketing-section { padding: 88px 0; }
+.marketing-section {
+  padding: 88px 0;
+}
 
-.marketing-section .wrapper { 
+.marketing-section .wrapper {
   width: 69.16%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.marketing { 
-  display: flex; 
+.marketing {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.marketing p { 
+.marketing p {
   width: 100%;
   color: #656565;
-  font-size: 14px; 
+  font-size: 14px;
   line-height: 25px;
 }
 
-.marketing figure { margin-right: 20px;}
-.marketing figure { width: 38%; }
-.marketing figure img{ width: 100%;}
-.marketing-info li:not(:last-child) { margin-bottom: 30px; }
+.marketing figure {
+  margin-right: 20px;
+}
 
-.marketing-info { 
+.marketing figure {
+  width: 38%;
+}
+
+.marketing figure img {
+  width: 100%;
+}
+
+.marketing-info li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.marketing-info {
   margin-right: 30px;
   flex-basis: 100%;
 }
-.marketing-img { flex-basis: 100%; }
-.marketing-img img { width: 98%; }
+
+.marketing-img {
+  flex-basis: 100%;
+}
+
+.marketing-img img {
+  width: 98%;
+}
 
 /*=================================
   marketting styling ends here
@@ -502,7 +628,7 @@ li {
 .about-info-section {
   padding: 85px 0;
   position: relative;
-  background: rgb(252,73,40,0.9);
+  background: rgb(252, 73, 40, 0.9);
 }
 
 .about-info-section .wrapper {
@@ -586,12 +712,17 @@ li {
   padding: 33px;
   flex-basis: 32%;
   background-color: #fff;
-  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-.services-card figure { margin-bottom: 20px;}
-.services-card img { width: 30%; }
+.services-card figure {
+  margin-bottom: 20px;
+}
+
+.services-card img {
+  width: 30%;
+}
 
 .services-card p {
   width: 100%;
@@ -640,7 +771,7 @@ li {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: linear-gradient(to right, rgb(29,50,64, 0.5), rgb(29,50,64,0.5));
+  background: linear-gradient(to right, rgb(29, 50, 64, 0.5), rgb(29, 50, 64, 0.5));
   /* box-shadow: 19px 0px 0px 1px rgb(29,50,64, 0.5); */
 }
 
@@ -787,7 +918,9 @@ li {
   align-items: center;
 }
 
-.reviews-list li:not(:first-child) { display: none; }
+.reviews-list li:not(:first-child) {
+  display: none;
+}
 
 .reviews-list li figure {
   text-align: center;
@@ -797,6 +930,7 @@ li {
 
 .reviews-list li figure figcaption {
   width: 100%;
+  margin-top: 10px;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
@@ -842,7 +976,7 @@ li {
   display: flex;
 }
 
-.reviews-list .stars li{
+.reviews-list .stars li {
   display: block;
 }
 
@@ -926,7 +1060,7 @@ li {
   width: 100%;
   padding: 30px 20px;
   background-color: #fff;
-  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .article-desc .article-date {
@@ -952,4 +1086,122 @@ li {
 
 /*=================================
   Blog styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+/* footer-top starts here */
+footer {
+  position: relative;
+  background: rgba(8, 25, 37, 0.9);
+}
+
+.footer-top {
+  padding: 80px 0;
+}
+
+.footer-top .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.footer-top figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer-top h6 a {
+  color: #fff;
+}
+
+.footer-top p {
+  width: 50%;
+  margin-top: 10px;
+  color: #A2A5A5;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer-bg {
+  width: 40px;
+  height: 40px;
+  background-color: #54606A;
+}
+
+.footer-bg a::before {
+  padding: 13px 15px;
+  font-size: 14px;
+}
+
+.media-icons {
+  margin-top: 15px;
+}
+
+.media-icons li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.privacy-terms-disc-list {
+  margin-top: 20px;
+}
+
+.privacy-terms-disc-list li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.privacy-terms-disc-list a {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+/* footer-top ends here */
+
+/* footer-bottom starts here  */
+.footer-bottom {
+  padding: 25px 0;
+  border-top: 1px solid #A2A5A5;
+}
+
+.footer-bottom .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom .wrapper p {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-bottom .wrapper p::after {
+  width: 75%;
+  height: 22px;
+  margin-top: 5px;
+  display: block;
+  background-color: #204A64;
+  text-align: center;
+  content: "";
+}
+
+/* footer-bottom ebds here  */
+
+/*=================================
+  footer styling ends here
 =================================*/
