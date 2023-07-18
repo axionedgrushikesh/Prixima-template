@@ -134,7 +134,15 @@ sub { bottom: -.25em; }
 
 .cf:after { clear: both; }
 
-.cf { *zoom: 1; }
+.cf { zoom: 1; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 /* 1.3. Font class declaration
    ========================================================================== */
@@ -155,3 +163,183 @@ sub { bottom: -.25em; }
   font-style: normal;
   font-weight: bold;
 }
+
+/* common styling starts here */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon::before {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.sectiob-heading {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 10px 25px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #FF4D29;
+  color: #fff;
+  font-size: 14px;
+}
+
+/*for wrapper*/
+.wrapper {
+  width: 81.80%;
+  max-width: 1117px;
+  margin: 0px auto;
+}
+
+/* common styling ends here */
+
+/*=================================
+  Header styling starts here
+=================================*/
+
+/* header top styling starts */
+.header-top {
+  background-color: #FE4C28;
+  padding: 5px 0;
+}
+
+.header-top-contact a { 
+  color: #fff; 
+  font-size: 14px;
+}
+
+.header-top .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mail-icon {
+  margin-right: 10px;
+}
+
+.mail-icon::before {
+  font-family: "FontAwesome";
+  content: "\f0e0";
+  margin-right: 5px;
+}
+
+.phone-icon::before {
+  content: "\f2a0";
+  font-family: "FontAwesome";
+  margin-right: 5px;
+}
+
+.header-medea-bg {
+  width: 27px;
+  height: 27px;
+  background-color: #FF795E;
+  border-radius: 50%;
+}
+
+.header-top-media { display: flex; }
+
+.facebook::before {
+  color: #fff;
+  content: "\f39e";
+  font-size: 13px;
+  padding: 7px 9px;
+}
+
+.instagram::before {
+  color: #fff;
+  content: "\f16d";
+  font-size: 13px;
+  padding: 7px 8px;
+}
+
+.twitter::before {
+  color: #fff;
+  content: "\f099";
+  font-size: 13px;
+  padding: 7px 8px;
+
+}
+
+.pinterest::before {
+  padding: 7px 8px;
+  color: #fff;
+  font-size: 13px;
+  content: "\f0d2";
+}
+/* header top styling ends */
+
+/* header bottom styling starts */
+.header-bottom {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.header-bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #191919;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo a::after {
+  content: "\.";
+  color: #FE4C28;
+}
+
+.header-bottom-nav { 
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-links li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header-nav-links a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active a {
+  color: #FE4C28;
+}
+/* header bottom styling ends */
+
+/*=================================
+  Header styling ends here
+=================================*/
