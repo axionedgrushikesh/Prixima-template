@@ -481,3 +481,60 @@ li {
 /*=================================
   marketting styling ends here
 =================================*/
+
+/*=================================
+  about info styling starts here
+=================================*/
+
+.about-info-section {
+  padding: 85px 0;
+  position: relative;
+  background: rgb(252,73,40,0.9);
+}
+
+.about-info-section .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.about-info-section figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.about-info-section figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-info-list {
+  display: flex;
+  flex-basis: 65%;
+  justify-content: space-between;
+}
+
+.about-info-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-info-list span:last-child {
+  color: #fff;
+  font-size: 14px;
+}
+
+.bold-text {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+/*=================================
+  about info styling ends here
+=================================*/
