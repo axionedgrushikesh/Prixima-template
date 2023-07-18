@@ -603,3 +603,98 @@ li {
 /*=================================
   Services styling ends here
 =================================*/
+
+/*=================================
+  portfolio styling starts here
+=================================*/
+
+.portfolio-section {
+  padding: 82px 0;
+}
+
+.portfolio-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-section p {
+  width: 50%;
+  text-align: center;
+}
+
+.portfolio-slider-list {
+  margin-top: 40px;
+  display: flex;
+  z-index: -1;
+}
+
+.portfolio-slider-list li {
+  width: 665px;
+  height: 436px;
+  position: relative;
+}
+
+.overlaping-heading {
+  padding: 30px 60px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, rgb(29,50,64, 0.5), rgb(29,50,64,0.5));
+  /* box-shadow: 19px 0px 0px 1px rgb(29,50,64, 0.5); */
+}
+
+.line-design {
+  color: #fff;
+  font-size: 14px;
+}
+
+.line-design::before {
+  width: 30px;
+  margin-right: 10px;
+  border-bottom: 2px solid #FE4C28;
+  display: inline-block;
+  content: "";
+
+}
+
+.overlaping-heading h5 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.portfolio-slider-list li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.portfolio-slider-list figure,
+.portfolio-slider-list figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-slider-toggle {
+  margin-top: 20px;
+  display: flex;
+}
+
+.portfolio-slider-toggle li {
+  width: 10px;
+  height: 10px;
+  background-color: #d0d3d3;
+  border-radius: 50%;
+}
+
+.portfolio-slider-toggle li:first-child {
+  background-color: #FE4C28;
+}
+
+.portfolio-slider-toggle li:not(:last-child) {
+  margin-right: 15px;
+}
+
+
+/*=================================
+  portfolio styling ends here
+=================================*/
