@@ -219,6 +219,19 @@ li {
   margin-bottom: 8px;
 }
 
+.orange-color-text {
+  color: #FE4C28;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-heading {
+  font-size: 35px;
+  font-weight: 700;
+  color: #092032;
+  margin-bottom: 15px;
+}
+
 /*for wrapper*/
 .wrapper {
   width: 81.80%;
@@ -537,4 +550,56 @@ li {
 
 /*=================================
   about info styling ends here
+=================================*/
+
+/*=================================
+  Services styling starts here
+=================================*/
+
+.services-section {
+  padding: 82px 0;
+}
+
+.services-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-section p {
+  width: 50%;
+  text-align: center;
+}
+
+.services-list {
+  margin-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services-list li:nth-child(n+4) {
+  margin-top: 20px;
+}
+
+.services-card {
+  padding: 33px;
+  flex-basis: 32%;
+  background-color: #fff;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.services-card figure { margin-bottom: 20px;}
+.services-card img { width: 30%; }
+
+.services-card p {
+  width: 100%;
+  color: #656565;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/*=================================
+  Services styling ends here
 =================================*/
