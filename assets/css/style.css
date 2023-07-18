@@ -213,6 +213,12 @@ li {
   font-size: 14px;
 }
 
+.h-four-text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 /*for wrapper*/
 .wrapper {
   width: 81.80%;
@@ -432,4 +438,46 @@ li {
 
 /*=================================
   Banner styling ends here
+=================================*/
+
+/*=================================
+  marketting styling starts here
+=================================*/
+
+.marketing-section { padding: 88px 0; }
+
+.marketing-section .wrapper { 
+  width: 69.16%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketing { 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.marketing p { 
+  width: 100%;
+  color: #656565;
+  font-size: 14px; 
+  line-height: 25px;
+}
+
+.marketing figure { margin-right: 20px;}
+.marketing figure { width: 38%; }
+.marketing figure img{ width: 100%;}
+.marketing-info li:not(:last-child) { margin-bottom: 30px; }
+
+.marketing-info { 
+  margin-right: 30px;
+  flex-basis: 100%;
+}
+.marketing-img { flex-basis: 100%; }
+.marketing-img img { width: 98%; }
+
+/*=================================
+  marketting styling ends here
 =================================*/
