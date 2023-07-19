@@ -519,6 +519,7 @@ li {
 }
 
 .gs-btn {
+  border: 1px solid #FF4D29;
   margin-left: 0;
 }
 
@@ -1130,6 +1131,7 @@ footer {
 .footer-top p {
   width: 50%;
   margin-top: 10px;
+  margin-bottom: 20px;
   color: #A2A5A5;
   font-size: 13px;
   text-align: center;
@@ -1144,10 +1146,6 @@ footer {
 .footer-bg a::before {
   padding: 13px 15px;
   font-size: 14px;
-}
-
-.media-icons {
-  margin-top: 15px;
 }
 
 .media-icons li:not(:last-child) {
@@ -1204,4 +1202,131 @@ footer {
 
 /*=================================
   footer styling ends here
+=================================*/
+
+/*=================================
+  media query for 995 above starts here
+=================================*/
+
+@media only screen and (min-width: 995px) {
+  .header-top-contact a:hover {
+    color: #204A64;
+  }
+
+  .facebook:hover:before,
+  .twitter:hover:before,
+  .instagram:hover:before,
+  .pinterest:hover:before {
+    color: #204A64;
+  }
+
+  .header-nav-links a:hover {
+    color: #FE4C28;
+  }
+
+  .btn:hover {
+    background-color: #204A64;
+    color: #FE4C28;
+  }
+  
+  .gs-btn:hover {
+    border: 1px solid #fff;
+    background: transparent;
+  }
+
+  .ow-btn:hover {
+    background-color: #FE4C28;
+    color: #fff;
+  }
+
+  .previous,
+  .next {
+    transition: 0.3s ease-in-out;
+  }
+
+  .previous:hover,
+  .next:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+  }
+
+  .portfolio-slider-toggle li,
+  .reviews-slider-toggle li {
+    cursor: pointer;
+  }
+
+  .privacy-terms-disc-list a:hover,
+  .footer-bg a:hover:before {
+    color: #FE4C28;
+  }
+
+  
+
+}
+
+/*=================================
+  media query for 995 above ends here
+=================================*/
+
+/*=================================
+  media query for 995 starts here
+=================================*/
+
+@media only screen and (max-width: 995px) {
+
+}
+
+/*=================================
+  media query for 995 ends here
+=================================*/
+
+
+/*=================================
+  media query for 768 starts here
+=================================*/
+
+@media only screen and (max-width: 768px) {
+
+}
+
+
+/*=================================
+  media query for 768 ends here
+=================================*/
+
+/*=================================
+  media query for 640 starts here
+=================================*/
+
+@media only screen and (max-width: 640px) {
+  
+}
+
+/*=================================
+  media query for 640 ends here
+=================================*/
+
+
+/*=================================
+  media query for 480 starts here
+=================================*/
+
+@media only screen and (max-width: 480px) {
+
+}
+
+/*=================================
+  media query for 480 ends here
+=================================*/
+
+/*=================================
+  media query for 375 starts here
+=================================*/
+
+@media only screen and (max-width: 375px) {
+
+}
+
+/*=================================
+  media query for 375 ends here
 =================================*/
