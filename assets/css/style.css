@@ -583,9 +583,8 @@ li {
 
 .marketing figure { margin-right: 20px; }
 
-.marketing figure { width: 38%; }
+.marketing figure img { width: 80px; }
 
-.marketing figure img { width: 100%; }
 
 .marketing-info li:not(:last-child) { margin-bottom: 30px; }
 
@@ -594,9 +593,9 @@ li {
   flex-basis: 100%;
 }
 
-.marketing-img { flex-basis: 100%; }
+.marketing-img { flex-basis: 85%; }
 
-.marketing-img img { width: 98%; }
+.marketing-img img { width: 100%; }
  
 /*=================================
   marketting styling ends here
@@ -679,8 +678,11 @@ li {
 .services-list {
   margin-top: 23px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.services-list li:not(:nth-child(3n)) {
+  margin-right: 18px;
 }
 
 .services-list li:nth-child(n+4) { margin-top: 20px; }
@@ -823,7 +825,10 @@ li {
   text-align: center;
 }
 
-.team-members-list li figure { width: 100%; }
+.team-members-list li figure { 
+  width: 100%; 
+  position: relative;
+}
 
 .team-members-list li img {
   width: 100%;
@@ -900,6 +905,7 @@ li {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .first-review span {
@@ -1148,7 +1154,16 @@ footer {
 =================================*/
 
 @media only screen and (min-width: 995px) {
-  .header-top-contact a:hover { color: #204A64; } 
+  
+  .header-top-contact a:hover { color: #204A64; }
+  
+  .header-top-contact a,
+  .facebook::before,
+  .twitter::before,
+  .instagram::before,
+  .pinterest::before,
+  .header-nav-links a,
+  .btn  { transition: .5s; }
 
   .facebook:hover:before,
   .twitter:hover:before,
@@ -1168,17 +1183,20 @@ footer {
   }
 
   .ow-btn:hover {
+    border: 1px solid #FE4C28;
     background-color: #FE4C28;
     color: #fff;
   }
 
   .previous,
-  .next { transition: 0.3s ease-in-out; }
+  .next,
+  .privacy-terms-disc-list a {
+    transition: .8s;
+  }
 
   .previous:hover,
   .next:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease-in-out;
+    background-color: #FE4C28;
   }
 
   .portfolio-slider-toggle li,
@@ -1186,6 +1204,29 @@ footer {
 
   .privacy-terms-disc-list a:hover,
   .footer-bg a:hover:before { color: #FE4C28;}
+
+  /* .team-members-list:hover {
+    width: 100%;
+    height: 250px;
+  }
+
+  .team-members-list li { display: block; }
+
+  .team-members-list li figure:hover {
+    position: relative;
+    background: rgb(203,80,54, 0.5);
+    width: 100%;
+    height: 100%; 
+  }
+  
+  .team-members-list li figure img:hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  } */
 }
 
 /*=================================
@@ -1236,8 +1277,6 @@ footer {
   .marketing-img img { width: 100%; }
 
   .marketing-info li:not(:last-child) { margin-bottom: 20px; }
-
-  .marketing figure { width: 60%; }
 
   .marketing-section { padding: 70px 0;}
 
@@ -1311,6 +1350,16 @@ footer {
   media query for 995 ends here
 =================================*/
 
+@media only screen and (max-width: 1099px) { 
+  .services-card { flex-basis: 45%; }
+
+  .services-list { justify-content: center; }
+  
+  .services-list li:nth-child(n+3) {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+ }
 
 /*=================================
   media query for 768 starts here
@@ -1368,13 +1417,13 @@ footer {
     margin-bottom: 30px; 
   }
 
-  .marketing figure { width: 11%;}
-
   .marketing-img {
     display: flex;
     justify-content: center;
   }
 
+  .marketing figure img { width: 70px; }
+ 
   .marketing-img img { width: 85%; }
 
   .marketing-section { padding: 60px 0;}
@@ -1389,13 +1438,22 @@ footer {
 
   .about-info-list li:not(:last-child) { margin-bottom: 15px;}
 
+  .services-list { flex-direction: column; }
+
+  .services-list li:not(:nth-child(3n)) { margin-right: 0; }
+
+  .services-list li:nth-child(n+3) { 
+    margin-top: 0;
+    margin-right: 0; 
+  }
+
   .services-section .wrapper { width: 90%; }
 
   .services-section { padding: 60px 0;}
 
   .orange-color-text { font-size: 13px; }
 
-  .services-list { flex-direction: column; }
+
 
   .section-heading { font-size: 25px; }
 
@@ -1513,8 +1571,6 @@ footer {
 
   .h-four-text { font-size: 15px; }
 
-  .marketing figure { width: 16%; }
-
   .bold-text { font-size: 30px; }
 
   .about-info-list span:last-child { font-size: 12px; }
@@ -1591,8 +1647,6 @@ footer {
     padding: 5px 10px;
     font-size: 10px;
   }
-
-  .marketing figure { width: 20%; }
 
   .h-four-text { font-size: 14px; }
 
