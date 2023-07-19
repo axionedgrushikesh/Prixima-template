@@ -458,6 +458,16 @@ li {
   color: #FE4C28;
 }
 
+.hamberger-icon {
+  display: none;
+}
+
+.hamberger-icon::before {
+  content: "\f0c9";
+  color: #000;
+  font-size: 20px;
+}
+
 /* header bottom styling ends */
 
 /*=================================
@@ -471,6 +481,8 @@ li {
 .banner-section {
   padding: 175px 0;
   min-height: 619px;
+  display: flex;
+  align-items: center;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -506,7 +518,7 @@ li {
 }
 
 .banner-info h2 {
-  width: 62%;
+  width: 72%;
   margin-top: 20px;
   color: #fff;
   font-size: 60px;
@@ -1228,7 +1240,7 @@ footer {
     background-color: #204A64;
     color: #FE4C28;
   }
-  
+
   .gs-btn:hover {
     border: 1px solid #fff;
     background: transparent;
@@ -1259,9 +1271,6 @@ footer {
   .footer-bg a:hover:before {
     color: #FE4C28;
   }
-
-  
-
 }
 
 /*=================================
@@ -1273,7 +1282,122 @@ footer {
 =================================*/
 
 @media only screen and (max-width: 995px) {
+  .logo a {
+    font-size: 24px;
+  }
 
+  .header-nav-links a,
+  .header-top-contact a {
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 8px 23px;
+    font-size: 13px;
+  }
+
+  .banner-section {
+    padding: 90px 0;
+    min-height: 500px;
+  }
+
+  .banner-info h2 {
+    width: 86%;
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  .gs-btn,
+  .ow-btn { padding: 8px 20px; }
+
+  .previous, .next {
+    width: 50px;
+    height: 50px;
+  }
+
+  .h-four-text { font-size: 16px; }
+
+  .marketing p { 
+    font-size: 12px;
+    line-height: 20px; 
+  }
+
+  .marketing-img img { width: 100%; }
+
+  .marketing-info li:not(:last-child) { margin-bottom: 20px; }
+
+  .marketing figure { width: 60%; }
+
+  .marketing-section { padding: 70px 0;}
+
+  .about-info-list { flex-basis: 90%; }
+
+  .about-info-section { padding: 65px 0;}
+  
+  .bold-text { font-size: 43px; }
+
+  .services-section { padding: 70px 0;}
+
+  .orange-color-text { font-size: 14px; }
+
+  .services-section p {
+    width: 70%;
+    font-size: 14px;
+  }
+
+  .section-heading { font-size: 30px; }
+
+  .services-card p {
+    width: 100%; 
+    font-size: 12px; 
+    line-height: 20px;
+  }
+
+  .portfolio-section,
+  .team-section,
+  .reviews-section,
+  .blog-section { padding: 70px 0; }
+
+  .portfolio-section p,
+  .team-section p,
+  .first-review p,
+  .blog-section p { 
+    width: 70%;
+    font-size: 14px; 
+  }
+
+  .portfolio-slider-list li {
+    width: 573px;
+    height: 377px;
+  }
+
+  .overlaping-heading h5 {
+    font-size: 22px;
+  }
+
+  .line-design { font-size: 13px; }
+
+  .team-members-list li figcaption,
+  .reviews-list li figure figcaption { font-size: 16px; }
+
+  .team-members-list li span { font-size: 13px; }
+
+  .reviews-list li figure img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .reviews-section .wrapper { width: 90%; }
+
+  .article-desc p {
+    width: 100%;
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .footer-top p { 
+    width: 80%;
+  }
 }
 
 /*=================================
@@ -1286,7 +1410,173 @@ footer {
 =================================*/
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
 
+  .hamberger-icon {
+    display: block;
+  }
+
+  .header-top-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-top .wrapper {
+    align-items: center;
+  }
+
+  .header-top-contact a,
+  .facebook::before,
+  .twitter::before,
+  .instagram::before,
+  .pinterest::before {
+    font-size: 12px;
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  .header-bottom {
+    padding: 10px 0;
+  }
+
+  .banner-info h2 {
+    width: 100%;
+    font-size: 45px;
+    line-height: 65px;
+  }
+
+  .banner-info span { font-size: 13px; }
+
+  .banner-section { padding: 80px 0;}
+
+  .btn { font-size: 12px; }
+
+  .previous, .next {
+    width: 45px;
+    height: 45px;
+    font-size: 9px;
+  }
+
+  .marketing-section .wrapper {
+    flex-direction: column;
+  }
+
+  .marketing-info { margin-right: 0;
+  margin-bottom: 30px; }
+
+  .marketing figure { width: 11%;}
+
+  .marketing-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .marketing-img img { width: 85%; }
+
+  .marketing-section { padding: 60px 0;}
+
+  .marketing-section .wrapper { width: 90%; }
+
+  .about-info-list { flex-direction: column;}
+
+  .about-info-section { padding: 40px 0;}
+
+  .bold-text { font-size: 34px; }
+
+  .about-info-list li:not(:last-child) { margin-bottom: 15px;}
+
+  .services-section .wrapper { width: 90%; }
+
+  .services-section { padding: 60px 0;}
+
+  .orange-color-text { font-size: 13px; }
+
+  .services-list { flex-direction: column; }
+
+  .section-heading { font-size: 25px; }
+
+  .services-section p {
+    width: 75%;
+    font-size: 13px;
+  }
+
+  .services-list li:not(:last-child) { margin-bottom: 20px; }
+
+  .services-list li:nth-child(n+4) { margin-top: 0; }
+ 
+  .services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-card img { width: 100%; }
+
+  .services-card p {
+    width: 80%; 
+    font-size: 12px; 
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .portfolio-section,
+  .team-section,
+  .reviews-section,
+  .blog-section { padding: 60px 0; }
+
+  .portfolio-section .wrapper { width: 90%; }
+
+  .portfolio-section p,
+  .team-section p,
+  .first-review p,
+  .blog-section p { font-size: 13px; }
+
+  .portfolio-slider-list li {
+    width: 480px;
+    height: 315px;
+  }
+
+  .overlaping-heading h5 {
+    font-size: 20px;
+  }
+
+  .line-design { font-size: 12px; }
+
+  .team-members-list li img { width: 70%; }
+
+  .team-members-list { flex-direction: column;}
+
+  .team-members-list li figcaption,
+  .reviews-list li figure figcaption { font-size: 14px; }
+  .team-members-list li span { font-size: 12px; }
+
+  .reviews-list li figure img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .blog-section .wrapper { width: 90%;}
+
+  .articles-container { 
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .articles-container article { width: 80%; }
+
+  .articles-container article:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .article-desc p {
+    width: 100%;
+    font-size: 10px;
+    line-height: 17px;
+  }
 }
 
 
@@ -1299,7 +1589,89 @@ footer {
 =================================*/
 
 @media only screen and (max-width: 640px) {
+
+  .header-top-contact a,
+  .facebook::before,
+  .twitter::before,
+  .instagram::before,
+  .pinterest::before {
+    font-size: 11px;
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .btn {
+    padding: 7px 21px;
+  }
+
+  .banner-info span { font-size: 12px; }
+
+  .banner-info h2 { 
+    font-size: 40px; 
+    line-height: 60px;
+  }
+
+  .btn {
+    padding: 6px 16px;
+  }
+
+  .previous, .next {
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+  }
+
+  .h-four-text { font-size: 15px; }
+
+  .marketing figure { width: 16%; }
+
+  .bold-text { font-size: 30px; }
+
+  .about-info-list span:last-child { font-size: 12px; }
+
+  .marketing-section { padding: 50px 0;}
   
+  .services-section { padding: 50px 0;}
+
+  .portfolio-section,
+  .team-section,
+  .reviews-section,
+  .blog-section { padding: 50px 0; }
+
+  .section-heading { font-size: 23px; }
+
+  .portfolio-slider-list li {
+    width: 400px;
+    height: 263px;
+  }
+
+  .overlaping-heading h5 {
+    font-size: 18px;
+  }
+
+  .line-design { font-size: 12px; }
+
+  .team-members-list li figcaption,
+  .reviews-list li figure figcaption { font-size: 13px; }
+
+  .footer-top p { 
+    width: 80%;
+  }
+
+  .footer-top .wrapper { width: 90%; }
+
+  .footer-bg a::before {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+
+  .footer-bg {
+    width: 35px;
+    height: 35px;
+  }
+
 }
 
 /*=================================
@@ -1313,6 +1685,100 @@ footer {
 
 @media only screen and (max-width: 480px) {
 
+  .banner-section { 
+    min-height: 450px;
+    padding: 70px 0;
+  }
+
+  .banner-info h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .banner-info span {
+    font-size: 10px;
+  }
+
+  .previous, .next {
+    width: 35px;
+    height: 35px;
+    font-size: 8px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .marketing figure { width: 20%; }
+
+  .h-four-text { font-size: 14px; }
+
+  .marketing p { font-size: 10px; }
+
+  .bold-text { font-size: 27px; }
+
+  .about-info-list span:last-child { font-size: 10px; }
+
+  .marketing-section,
+  .services-section { padding: 40px 0;}
+
+  .services-section p,
+  .portfolio-section p,
+  .team-section p,
+  .first-review p,
+  .blog-section p {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .section-heading { font-size: 20px; }
+
+  .services-card p { font-size: 11px;}
+
+  .portfolio-section,
+  .team-section,
+  .reviews-section,
+  .blog-section { padding: 40px 0; }
+  
+  .portfolio-slider-list li {
+    width: 310px;
+    height: 203px;
+  }
+
+  .overlaping-heading h5 {
+    font-size: 16px;
+  }
+
+  .line-design { font-size: 10px; }
+
+  .portfolio-slider-toggle li:not(:last-child) { margin-right: 12px; }
+
+  .team-members-list li figcaption,
+  .reviews-list li figure figcaption { font-size: 12px; }
+
+  .team-members-list li span { font-size: 10px; }
+
+  .team-section .wrapper { width: 90%; }
+
+  .team-members-list li img { width: 80%; }
+
+  .articles-container article { width: 90%; }
+
+  .footer-top p { 
+    width: 100%;
+  }
+
+  .footer-bottom .wrapper p { 
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .footer-bottom .wrapper p::after {
+    width: 75%;
+    height: 18px;
+  }
+
 }
 
 /*=================================
@@ -1324,6 +1790,28 @@ footer {
 =================================*/
 
 @media only screen and (max-width: 375px) {
+
+  .banner-info h2 {
+    font-size: 26px;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+
+  .banner-btn { margin-top: 10px; }
+
+  .banner-info span {
+    font-size: 10px;
+  }
+
+  .previous, .next {
+    width: 35px;
+    height: 35px;
+    font-size: 8px;
+  }
+
+  .services-section { padding: 30px 0;}
+
+  .articles-container article { width: 100%; }
 
 }
 
