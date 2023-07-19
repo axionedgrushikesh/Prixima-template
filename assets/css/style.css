@@ -1424,8 +1424,11 @@ footer {
   }
 
   .header-top .wrapper {
+    width: 90%;
     align-items: center;
   }
+
+  .header-bottom .wrapper { width: 90%; }
 
   .header-top-contact a,
   .facebook::before,
