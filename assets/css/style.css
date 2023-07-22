@@ -825,18 +825,15 @@ li {
   text-align: center;
 }
 
-.team-members-list li figure { 
-  width: 100%; 
-  position: relative;
-}
-
 .team-members-list li img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
-.team-members-list li figcaption {
+.team-members-list li .caption {
   margin-top: 15px;
+  display: block;
   color: #092032;
   font-size: 18px;
   font-weight: 700;
@@ -1205,28 +1202,42 @@ footer {
   .privacy-terms-disc-list a:hover,
   .footer-bg a:hover:before { color: #FE4C28;}
 
-  /* .team-members-list:hover {
-    width: 100%;
-    height: 250px;
-  }
-
-  .team-members-list li { display: block; }
-
-  .team-members-list li figure:hover {
+  .team-member {
     position: relative;
-    background: rgb(203,80,54, 0.5);
-    width: 100%;
-    height: 100%; 
+    overflow: hidden;
+    cursor: pointer;
   }
-  
-  .team-members-list li figure img:hover {
+
+  .team-member:hover .team-members-media {
+    transform: translate(-50%, -50%);
+    transition: .6s;
+  }
+
+  .team-members-media {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  } */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 51%);
+    background-color: #fe4c28a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+
+  .team-members-media li {
+    flex-basis: 16%;
+  }
+
+  .team-members-media a::before {
+    font-size: 14px;
+    padding: 15px;
+    background-color: #d6cccc71;
+    border-radius: 50%;
+  }
 }
 
 /*=================================
