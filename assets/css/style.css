@@ -1552,6 +1552,29 @@ footer {
     font-size: 10px;
     line-height: 17px;
   }
+
+  .team-members {
+    overflow: visible;
+  }
+
+  .team-members-media {
+    position: relative;
+    background-color: transparent;
+    transform: translate(-53%, -95%);
+    overflow: visible;
+  }
+
+  .team-members-media a::before {
+    background-color: #FE4C28;
+  }
+
+  .team-members-list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .team-members-media li:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -1752,6 +1775,8 @@ footer {
   .services-section { padding: 30px 0;}
 
   .articles-container article { width: 100%; }
+
+  .team-members-media a::before { padding: 10px; }
 
 }
 
