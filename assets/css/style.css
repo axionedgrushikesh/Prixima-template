@@ -455,12 +455,22 @@ li {
 
 .active a { color: #FE4C28; }
 
-.hamberger-icon { display: none; }
+.hamburger {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
 
-.hamberger-icon::before {
-  color: #000;
-  font-size: 20px;
-  content: "\f0c9";
+.bar {
+  width: 18px;
+  height: 2px;
+  margin: 4px;
+  display: block;
+  background-color: #121312;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  text-indent: -9999px;
 }
 
 /* header bottom styling ends */
@@ -1389,8 +1399,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .navbar { display: none; }
 
-  .hamberger-icon { display: block; }
-
   .header-top-contact {
     display: flex;
     flex-direction: column;
@@ -1574,6 +1582,26 @@ footer {
 
   .team-members-media li:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -ms-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 }
 
