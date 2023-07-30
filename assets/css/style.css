@@ -1610,7 +1610,8 @@ footer {
   }
 
   .header-bottom-nav .header-nav-links{
-    width: 30%;
+    width: 90%;
+    height: 100vh;
     position: absolute;
     display: flex;
     flex-direction: column;
