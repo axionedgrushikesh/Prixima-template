@@ -1610,12 +1610,8 @@ footer {
   }
 
   .header-bottom-nav .header-nav-links{
-<<<<<<< HEAD
     width: 90%;
     height: 100vh;
-=======
-    width: 30%;
->>>>>>> d7b245178fc5937ffab3d01734bc33ec5530ef3d
     position: absolute;
     display: flex;
     flex-direction: column;
