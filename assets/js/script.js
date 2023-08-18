@@ -7,25 +7,5 @@ hamburger.addEventListener("click", () => {
   headerNav.classList.toggle("active");
 })
 
-//remove active
-navLink.forEach(e => {
-  e.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    headerNav.classList.remove("active");
-  })
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+hamburger.classList.remove("active");
+headerNav.classList.remove("active");
