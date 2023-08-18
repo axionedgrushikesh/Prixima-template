@@ -1809,7 +1809,8 @@ footer {
   }
 
   .header-bottom-nav .header-nav-links{
-    width: 30%;
+    width: 90%;
+    height: 100vh;
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
