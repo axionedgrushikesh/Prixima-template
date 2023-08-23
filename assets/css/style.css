@@ -834,6 +834,7 @@ li {
   width: 665px;
   height: 436px;
   position: relative;
+  transition: all .4s;
 }
 
 .overlaping-heading {
@@ -889,7 +890,7 @@ li {
   border-radius: 50%;
 }
 
-.portfolio-slider-toggle li:first-child { background-color: #FE4C28; }
+.portfolio-slider-toggle .active { background-color: #FE4C28; }
 
 .portfolio-slider-toggle li:not(:last-child) { margin-right: 15px; }
 
