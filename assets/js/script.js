@@ -1,6 +1,16 @@
+$(document).ready(function () {
+    $('.reviews-list').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
+
 var hamburger = document.querySelector(".hamburger"),
     headerNav = document.querySelector(".header-nav-links"),
-    
+
     activeSlide = document.querySelectorAll(".portfolio-slider-toggle li"),
     sliderImages = document.querySelectorAll(".portfolio-slider-list li"),
 
