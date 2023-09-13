@@ -1049,8 +1049,9 @@ li {
 .reviews-list li:not(:first-child) { display: none; }
 
 .reviews-list li figure {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -1072,8 +1073,11 @@ li {
      object-fit: cover;
 }
 
+.reviews-list .first-review { display: flex !important; }
+
 .first-review span {
   font-size: 12px;
+  text-align: center;
   text-transform: capitalize;
 }
 
